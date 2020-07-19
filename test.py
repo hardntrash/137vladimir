@@ -9,6 +9,6 @@ bot = commands.Bot(command_prefix='!')
 async def test(ctx, arg):  # создаем асинхронную фунцию бота
     await ctx.send(arg)  # отправляем обратно аргумент
 
-token = NzMyODM4ODAwODIwMTQyMTYy.XxMoEg.zYiBmBgPOJjlnWNZOMOUIDZd6ec
+TOKEN = 'NzMyODM4ODAwODIwMTQyMTYy.XxMoEg.zYiBmBgPOJjlnWNZOMOUIDZd6ec'
 
-bot.run(token)
+bot.run(TOKEN)
