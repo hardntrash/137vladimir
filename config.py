@@ -2,6 +2,9 @@ import os
 
 token = os.environ.get('CONFIG_TOKEN')
 
+client.run(str(token))
+
+
 POST_ID = 734074889467723816
 
 ROLES = {
