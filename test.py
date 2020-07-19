@@ -105,11 +105,11 @@ class MyClient(discord.Client):
             print(repr(e))
 as
        
-client = commands.Bot ( command_prefix = '!' )
+client = commands.bot ( command_prefix = '!' )
 
 @client.command ( pass_context = True )
 
-async def талиб( ctx ):
+async def hello( ctx ):
     await ctx.send ( 'лох')
  
 # RUN
