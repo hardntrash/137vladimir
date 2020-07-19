@@ -105,8 +105,13 @@ class MyClient(discord.Client):
             print(repr(e))
        
 import discord
-from discord.ext impoer commands
+from discord.ext import commands
 client = commands.bot ( command_prefix = '!' )
+
+@client.event
+
+async def on_ready():
+  print('BOT rdy')
 
 @client.command ( pass_context = True )
 
