@@ -103,6 +103,13 @@ class MyClient(discord.Client):
             print('[ERROR] KeyError, no role found for ' + emoji)
         except Exception as e:
             print(repr(e))
+       
+client = commands.bot ( command_prefix = '!' )
+
+@client.command ( pass_context = True )
+
+async def талиб( ctx ):
+    await ctx.send ( 'лох')
  
 # RUN
 token = os.environ.get('BOT_TOKEN')
