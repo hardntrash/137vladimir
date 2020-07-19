@@ -106,7 +106,7 @@ class MyClient(discord.Client):
        
 import discord
 from discord.ext import commands
-client = commands.bot ( command_prefix = '!' )
+client = commands.Bot ( command_prefix = '!' )
 
 @client.event
 
