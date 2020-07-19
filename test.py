@@ -51,11 +51,11 @@ class MyClient(discord.Client):
         except Exception as e:
             print(repr(e))
       bot = commands.Bot(command_prefix='.')
-        @bot.command(pass_context=True)  
-        async def test(ctx, arg):  
+      @bot.command(pass_context=True)  
+      async def test(ctx, arg):  
         await ctx.send(arg)  
-        token = os.environ.get('BOT_TOKEN2')
-        bot.run(str(token))
+      token = os.environ.get('BOT_TOKEN2')
+      bot.run(str(token))
 
 
 # RUN
