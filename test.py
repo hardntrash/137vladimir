@@ -116,7 +116,7 @@ bot = commands.Bot(command_prefix='!')
 async def test(ctx, arg):  
     await ctx.send(arg)  
 
-token = os.environ.get('BOT_TOKEN')
+token = os.environ.get('BOT_TOKEN2')
 
 bot.run(str(token))
 
