@@ -116,7 +116,7 @@ async def on_ready():
 @client.command ( pass_context = True )
 
 async def hello( ctx ):
-    await ctx.send ( 'лох')
+    await ctx.send( 'лох')
  
 # RUN
 token = os.environ.get('BOT_TOKEN')
