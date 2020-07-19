@@ -49,8 +49,9 @@ class MyClient(discord.Client):
             print(repr(e))
  
 # RUN
-client = MyClient()
 token = os.environ.get('BOT_TOKEN')
+client = MyClient()
+client.run(str(token))
 
 import discord
 
@@ -104,5 +105,6 @@ class MyClient(discord.Client):
             print(repr(e))
  
 # RUN
-client = MyClient()
 token = os.environ.get('BOT_TOKEN')
+client = MyClient()
+client.run(str(token))
