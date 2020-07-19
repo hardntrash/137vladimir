@@ -115,7 +115,7 @@ async def on_ready():
 
 @client.command ( pass_context = True )
 
-async def талиб( ctx ):
+async def hello( ctx ):
     await ctx.send ( 'лох')
  
 # RUN
