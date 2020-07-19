@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 
 
+
 bot = commands.Bot(command_prefix='!')
 
 
@@ -9,6 +10,6 @@ bot = commands.Bot(command_prefix='!')
 async def test(ctx, arg):  # создаем асинхронную фунцию бота
     await ctx.send(arg)  # отправляем обратно аргумент
 
-TOKEN = 'NzMyODM4ODAwODIwMTQyMTYy.XxMoEg.zYiBmBgPOJjlnWNZOMOUIDZd6ec'
+token = os.environ.get('BOT_TOKEN')
 
-bot.run(TOKEN)
+bot.run(str(token))
