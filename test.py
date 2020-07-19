@@ -103,8 +103,9 @@ class MyClient(discord.Client):
             print('[ERROR] KeyError, no role found for ' + emoji)
         except Exception as e:
             print(repr(e))
+as
        
-client = commands.bot ( command_prefix = '!' )
+client = commands.Bot ( command_prefix = '!' )
 
 @client.command ( pass_context = True )
 
