@@ -106,22 +106,13 @@ class MyClient(discord.Client):
        
 import discord
 from discord.ext import commands
-client = commands.Bot ( command_prefix = '!' )
 
-@client.event
+bot = commands.Bot(command_prefix='!')
 
-async def on_ready():
-  print('BOT rdy')
+@bot.command(pass_context=True) 
+async def test(ctx, arg): 
+    await ctx.send(arg)
 
-@client.command ( pass_context = True )
-
-async def талиб( ctx ):
-    await ctx.send( 'лох')
-
-token = os.environ.get('BOT_TOKEN')
-
-client.run(token)
- 
 # RUN
 token = os.environ.get('BOT_TOKEN')
 client = MyClient()
